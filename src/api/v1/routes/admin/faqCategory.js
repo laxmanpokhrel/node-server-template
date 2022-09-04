@@ -1,0 +1,10 @@
+const express = require("express")
+const faqCategoryController = require("../../controllers/admin/faqCategory")
+const router = express.Router()
+router.get("/faqCategory", faqCategoryController.getAllFaqCategory)
+router.get("/faqCategory/get/:faqId", faqCategoryController.getOneFaqCategory)
+router.get("/faqCategory/changeIsPublish/:faqCategoryId", faqCategoryController.changeIspublish)
+router.delete("/faqCategory/:faqCategoryId", faqCategoryController.deleteFaqCategory)
+router.post("/faqCategory", faqCategoryController.postFaqCategory)
+router.put("/faqCategory", faqCategoryController.putFaqCategory)
+module.exports = router
