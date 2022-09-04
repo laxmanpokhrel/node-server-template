@@ -1,4 +1,4 @@
-# The multimedia website server
+# The node website template server
 
 ## get this server up and running
 1. perform 'npm install'
